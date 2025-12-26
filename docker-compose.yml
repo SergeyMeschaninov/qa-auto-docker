@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:18.1
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/potgresql/data
+    environment:
+      - POSTGRES_DB=app
+      - POSTGRES_USER=login
+      - POSTGRES_PASSWORD=9MREsvXDs9Gk89Ef
